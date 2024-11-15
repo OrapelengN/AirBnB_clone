@@ -2,6 +2,7 @@
 import cmd
 from models.base_model import BaseModel
 
+
 class HBNBCommand(cmd.Cmd):
     """Command interpreter for AirBnB clone"""
     prompt = "(hbnb) "
@@ -27,6 +28,7 @@ class HBNBCommand(cmd.Cmd):
             new_instance = BaseModel()
             new_instance.save()
             print(new_instance.id)
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
