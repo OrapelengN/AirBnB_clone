@@ -25,6 +25,6 @@ class TestConsole(unittest.TestCase):
             HBNBCommand().onecmd("help")
             self.assertIn("Documented commands", output.getvalue().strip())
 
+
 if __name__ == "__main__":
     unittest.main()
-
